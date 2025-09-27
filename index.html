@@ -1,0 +1,160 @@
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>23520846</title>
+    <style>
+
+        h1, h2, h3, h4 {
+            font-size: 24px;
+            -webkit-text-stroke: 1px black; 
+        }
+
+        
+        td, th {
+            border: 1px solid black;
+        }
+
+       
+        .introduction {
+            background-color: #F3FDE8;
+            padding: 10px;
+        }
+
+        
+        .information, .contact {
+            background-image: url("bg.png");
+            background-repeat: repeat;  
+            text-align: center;
+            padding: 15px;
+        }
+
+        
+        .avatar {
+            display: block;
+            margin: 0 auto;
+        }
+        nav a, .footer{
+            background-color: #d4f2f4;
+            color: #0b0848;
+        }
+    </style>
+</head>
+<body>
+    <!-- Ảnh đặt trong body -->
+    <img src="https://example.com/image.jpg" alt="Lưu Khánh Linh" width="200" height="250" class="avatar">
+    <!-- Menu -->
+    <nav>
+        <a href="#about">Giới thiệu bản thân</a> | 
+        <a href="#contact">Gửi thông tin và liên hệ cùng tôi</a>
+    </nav>
+
+    <div id="about" class="introduction">
+        <h1 style="color: #CAEDFF">Giới thiệu bản thân</h1>
+        <p>Tên: Lưu Khánh Linh</p>
+        <p>Năm sinh: 2005</p>
+        <p>Chuyên ngành: Hệ thống thông tin</p>
+        <p>Trường: Đại học Công nghệ Thông tin - ĐHQG TP.HCM</p>
+        <p>Sở thích: Chơi game, đọc truyện tranh, nghe nhạc </p>
+        
+        <h1>Sở thích</h1>
+        <h2 style="color:#D8B4F8">Món ăn</h2>
+        <ul>
+            <li>Pizza</li>
+            <li>Mì Ý</li>
+            <li>Bánh tráng trộn</li>
+            <li>Trà sữa</li>
+        </ul>
+
+        <h2 style="color: #D8B4F8">Giải trí</h2>
+        <ul>
+            <li>Bắn bi</li>
+            <li>Nhảy dây</li>
+            <li>Đá cầu</li>
+        </ul>
+
+        <h2 style="color: #D8B4F8">Truyện tranh</h2>
+        <ul>
+            <li>One Piece</li>
+            <li>Naruto</li>
+            <li>Dragon Ball</li>
+            <li>Attack on Titan</li>
+        </ul>
+    </div>
+
+    <h2 style="color: #D8B4F8">Mục tiêu bản thân</h2>
+    <table>
+        <tr>
+            <th>Mục tiêu</th>
+            <th>Thời hạn</th>
+            <th>Hoàn thành</th>
+        </tr>
+        <tr>
+            <td>Hoàn thành tốt các môn học trong kỳ này</td>
+            <td>20/10/2025</td>
+            <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>Mở công ty riêng</td>
+            <td>28/10/2030</td>
+            <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>Cải thiện kỹ năng giao tiếp và làm việc nhóm</td>
+            <td>15/10/2026</td>
+            <td><input type="checkbox"></td>
+        </tr>
+    </table>
+
+    <div id="contact" class="information">
+        <h1 style="color: #CAEDFF">Gửi thông tin và Giao lưu cùng tôi</h1>
+        <form action="#" method="post">
+            <label for="name">Tên:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            
+            <label for="message">Tin nhắn:</label><br>
+            <textarea id="message" name="message" rows="4" cols="30" required></textarea><br>
+            
+            <label for="gender">Giới tính:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Nam</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Nữ</label><br>
+            
+            <label for="hobby">Sở thích:</label><br>
+            <input type="checkbox" id="hobby" name="hobby">
+            <label for="hobby">Chơi game</label>
+            <input type="checkbox" id="hobby1" name="hobby1">
+            <label for="hobby1">Đọc truyện tranh</label>
+            <input type="checkbox" id="hobby2" name="hobby2">
+            <label for="hobby2">Nghe nhạc</label><br>
+            
+            <label for="major">Ngành học:</label><br>
+            <select id="major" name="major">
+                <option value="information systems">Hệ thống thông tin</option>
+                <option value="computer science">Khoa học máy tính</option>
+                <option value="software engineering">Kỹ thuật phần mềm</option>
+                <option value="data science">Khoa học dữ liệu</option>
+                <option value="cyber security">An ninh mạng</option>
+                <option value="other">Khác</option>
+            </select><br><br>
+            
+            <input type="submit" value="Gửi">
+        </form>
+    </div>
+
+    <div class="contact">
+        <h2 style="color: #CAEDFF">Liên hệ</h2>
+        <p>Họ và Tên: Lưu Khánh Linh</p>
+        <p>Email: linhluutk@gmail.com</p>
+        <p>Số điện thoại: 0357328205</p>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Lưu Khánh Linh. All rights reserved.</p>
+    </div>
+</body>
+</html>
